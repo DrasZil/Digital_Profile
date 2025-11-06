@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background: white;
+    padding: 2rem;
+    width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.img-profile{
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+ul li{
+    margin: 0.5rem 0;
+    transition: 0.2s;
+    list-style: none;
+}
+
+ul li:hover{
+    background-color: #eef4ff;
+    padding-left: 8px;
+}
+
+.contact h2{
+    margin-top: 1.5rem;
+}
