@@ -46,6 +46,7 @@ h2{
     gap: 15px;
     margin-bottom: 20px;
     flex-wrap: wrap;
+    transition: all 0.35s ease;
 }
 
 .img-profile{
@@ -55,6 +56,7 @@ h2{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
+    transition: all 0.35s ease;
    
 }
 
@@ -62,6 +64,7 @@ h2{
     flex: 1;
     min-width: 200px;
     white-space: normal;
+    transition: all 0.35s ease;
 }
 
 .name-tagline h1{
@@ -206,4 +209,27 @@ ul li:hover{
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+@keyframes fireMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 600px){
+    .main-visual{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-profile{
+        max-width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .name-tagline{
+        text-align: center;
+    }
 }
