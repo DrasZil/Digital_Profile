@@ -11,33 +11,41 @@ body{
     align-items: flex-start;
     min-height: 100vh;
     padding: 40px 0;
-    background: #f5f5f5; 
+    background: #770b18; 
 }
 
 h2{
     text-align: left;
     padding-top: 20px;
+    color: #F7374F;
 }
 
 .bio{
     text-align: left;
     font-size: large;
     padding: 20px;
+    color: #fff;
 }
 
+
 .card{
-    background: white;
+    background: #522546;
     padding: 20px;
     width: min(90%, 900px);
     border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 128, 0.35),
+                0 0 0 2px rgba(255, 255, 255, 0.5);
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     margin: 0 20px;
+
+    animation: floatCard 6s ease-in-out infinite;
 }
 
 .card:hover{
     transform: scale(1.02);
+     transition: 0.3s;
+     box-shadow: 0 50px 70px rgba(128, 0, 128, 0.5);
 }
 
 .main-visual{
@@ -57,7 +65,15 @@ h2{
     object-fit: cover;
     margin-bottom: 15px;
     transition: all 0.35s ease;
-   
+    padding: 6px;
+    background: linear-gradient(135deg,
+    #ff3c00, #ff7300, #ffae00, #ffea00);
+    box-shadow: 0 0 25px rgba(255, 100, 0, 0.5);
+}
+
+.img-profile:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 35px rgba(255, 100, 0, 0.75);
 }
 
 .name-tagline{
@@ -193,16 +209,16 @@ ul li:hover{
     font-size: 1.2rem;
     margin-bottom: 15px;
     text-align: center;
-    color: #333;
+    color: #F7374F;
 }
 
 #contact p{
     margin: 10px 0;
     padding: 8px 12px;
-    background: #ffffff;
+    background: #88304E;
     border-radius: 10px;
     font-size: 0.95rem;
-    color: #444
+    color: #ed7280
 }
 
 @keyframes gradientMove {
@@ -215,6 +231,12 @@ ul li:hover{
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+@keyframes floatCard {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
 }
 
 @media (max-width: 600px){
@@ -233,3 +255,4 @@ ul li:hover{
         text-align: center;
     }
 }
+
